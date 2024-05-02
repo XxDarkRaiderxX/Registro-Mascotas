@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Tenencia Responsable de Mascotas y Animales de Compañía</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Encabezado -->
+
+<header>
+    <h1>Registro de Tenencia Responsable de Mascotas y Animales de Compañía</h1>
+    <br>
+    <!-- Menú de navegación -->
+    <nav class="main-navbar" id="main-navbar">
+        <ul style="text-align: right;" class="main-navbar-links">
+            <li><a href="#Inicio" class="main-navbar-link">Inicio</a></li>
+            <li><a href="#Requisitos" class="main-navbar-link">Requisitos</a></li>
+            <li><a href="preguntas.html" class="main-navbar-link">Preguntas Frecuentes</a></li>
+            <li><a href="consulta.html#consultas" class="main-navbar-link">Consultas de Animales Extraviados</a></li>
+            <li class="icon" onclick="toggleMenu()">&#9776;</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sección de introducción -->
+
+<section class="intro" id="Inicio">
+    <div class="background-image" style="background-image: url(assets/images/cat.jpg);">
+        <br><br><br><br><br><br><br><br>
+         <!-- Título y botones de ingreso -->
+        <h2>Registro</h2>
+        <br>
+        <div class="forms">
+            <form action="ingresar-clave-unica.html">
+                <button type="submit">Ingresar con Clave Única</button>
+            </form>
+            <form action="ingresar-cedula-identidad.html">
+                <button type="submit">Ingresar con Cédula de Identidad</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Sección para solicitar registro de mascota -->
+
+<section class="solicitar-registro">
+    <div class="container">
+        <br>
+        <br>
+        <h2>Solicita el registro de tu mascota</h2>
+        <hr class="divider1">
+        <!-- Formulario para solicitar registro -->
+        <div class="forms">
+            <form action="solicitar-registro.html">
+                <button type="submit">Solicita el registro de tu mascota</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Sección de requisitos -->
+
+<section class="requisitos">
+    <div class="container">
+        </a><h2 id="Requisitos">Requisitos</h2>
+        <hr class="divider">
+    </div>
+    <!-- Formulario para ingresar datos del animal -->
+<div class="container4" >
+    <div class="container1">
+        <h2>Datos del Animal</h2><br>
+    <form action="#" method="post" >
+        <!-- Campos del formulario -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="especie">Especie:</label>
+            <label><input type="radio" name="especie" value="perro"> Perro</label>
+            <label><input type="radio" name="especie" value="gato"> Gato</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="sexo">Sexo:</label>
+            <label><input type="radio" name="sexo" value="macho"> Macho</label>
+            <label><input type="radio" name="sexo" value="hembra"> Hembra</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza" name="raza">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="esterilizado">ESTERILIZADO:</label>
+            <label><input type="radio" name="esterilizado" value="si"> Sí</label>
+            <label><input type="radio" name="esterilizado" value="no"> No</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="color">COLOR:</label>
+            <input type="text" id="color" name="color">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="fecha_nacimiento">FECHA DE NACIMIENTO:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="procedimiento">PROCEDIMIENTO:</label>
+            <label><input type="radio" name="procedimiento" value="implantacion"> Implantación</label>
+            <label><input type="radio" name="procedimiento" value="verificacion"> Verificación</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="modo_obtencion">MODO DE OBTENCION:</label>
+            <label><input type="radio" name="modo_obtencion" value="recogido"> Recogido</label>
+            <label><input type="radio" name="modo_obtencion" value="reubicacion"> Reubicación</label>
+            <label><input type="radio" name="modo_obtencion" value="regalo"> Regalo</label>
+            <label><input type="radio" name="modo_obtencion" value="nacido_en_casa"> Nacido en Casa</label>
+            <label><input type="radio" name="modo_obtencion" value="compra"> Compra</label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="razon_tenencia">RAZON DE TENENCIA:</label>
+            <label><input type="radio" name="razon_tenencia" value="compania"> Compañía</label>
+            <label><input type="radio" name="razon_tenencia" value="asistencia"> Asistencia</label>
+            <label><input type="radio" name="razon_tenencia" value="terapia"> Terapia</label>
+            <label><input type="radio" name="razon_tenencia" value="trabajo"> Trabajo</label>
+            <label><input type="radio" name="razon_tenencia" value="seguridad"> Seguridad</label>
+            <label><input type="radio" name="razon_tenencia" value="deporte"> Deporte</label>
+            <label><input type="radio" name="razon_tenencia" value="exposicion"> Exposición</label>
+            <label><input type="radio" name="razon_tenencia" value="reproduccion"> Reproducción</label>
+            <label><input type="radio" name="razon_tenencia" value="caza"> Caza</label>
+        </div><br>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+        <button type="reset" class="btn-submit">Limpiar</button>
+    </form>
+    </div>    
+</div>
+    
+<!-- Sección de enlaces de interés -->
+
+</section>
+<div class="container">
+    <div class="column">
+        <h3>Links de Interés</h3>
+        <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <h3>Sigue el Programa de Tenencia Responsable de Animales de Compañía</h3>
+    </div>
+</div>
+
+<!-- Pie de página -->
+
+<footer>
+    <p class="version">Versión: req-iteracion-1-1343 10/04/2024 16:10:12</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
